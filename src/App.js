@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Component from "./components/Component";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <div className="App">
+         <header className="py-3 px-3 bg-dark d-flex justify-content-between">
+            <h3 className="text-white">First Assistant</h3>
+         </header>
+         <Component />
+      </div>
+   );
 }
 
 export default App;
